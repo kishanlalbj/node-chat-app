@@ -1,0 +1,26 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "npm test"
+  },
+  "engines": {
+    "node": "8.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kishanlalbj/node-chat-app.git"
+  },
+  "author": "kishanlalbj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kishanlalbj/node-chat-app/issues"
+  },
+  "homepage": "https://github.com/kishanlalbj/node-chat-app#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
