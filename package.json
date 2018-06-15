@@ -5,10 +5,11 @@
   "main": "app.js",
   "scripts": {
     "start": "node app",
-    "test": "npm test"
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec npm test"
   },
   "engines": {
-    "node": "8.9.1"
+    "node": "9"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,14 @@
   },
   "homepage": "https://github.com/kishanlalbj/node-chat-app#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "bootstrap": "^3.3.7",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "expect": "^23.1.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5"
   }
 }

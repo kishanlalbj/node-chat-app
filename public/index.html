@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
     <title>Node-Chat-App</title>
 </head>
 <body>
-    <h1>Chat-App</h1>
+    <nav class="navbar navbar-inverse" style="border-radius:0px">
+        <div class="container-fluid">
+            
+            
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                    Node-Chat-App
+                </a>
+            </div>
+        </div>
+        
+    </nav>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-primary" style="background-color:#fffded">
+                    <div class="panel-heading" >
+                        <h4>Users Online</h4>
+                    </div>
+                    <div class="panel-content" style="height:400px;overflow-y:auto">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="panel panel-primary" style="background-color:#fffded">
+                    <div class="panel-heading">
+                        <h4 style="text-align:center">Chat Window</h4>
+                    </div>
+                    <div class="panel-content" style="height:345px;overflow-y:auto">
+                       
+                    </div>    
+                </div>
+                
+                <form id="chat-form">
+                        <input type="text" style="width:38%;display:inline" class="form-control" name="name" placeholder="Type your name" id="username">
+                        <input style="width:50%;display:inline" class="form-control" type="text" name="message" placeholder="Type your message" id="message">
+                        <button style="width:10%" class="btn btn-primary" type="submit">
+                            <i class="glyphicon glyphicon-send"></i>
+                        </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./js/index.js ">
+        
+    </script>
 </body>
 </html>
