@@ -3,7 +3,7 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
-jobs:
+jobs: 
   build:
     docker:
       # specify the version you desire here
@@ -13,7 +13,10 @@ jobs:
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
-
+    general:
+      branches:
+        only:
+          - master # list of branches to build
     working_directory: ~/repo
 
     steps:
