@@ -8,7 +8,7 @@ describe('generateMessage',()=> {
         var text = "dasdasdasd"
         var message = generateMessage(from,text)
         expect(typeof from).toBe('string')
-        expect(typeof message.createdAt).toBe('number');
+        expect(typeof message.createdAt).toBe('string');
         expect(message).toMatchObject({from,text})
 
     })
