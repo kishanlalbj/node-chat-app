@@ -20,7 +20,7 @@ io.on('connection',(socket)=> {
 
     socket.on('sendMessage',(messageObj) => {
         console.log("Sending message from", socket.id)
-        socket.broadcast.emit('newMessage',generateMessage(messageObj.from,messageObj.text))
+        io.emit('newMessage',generateMessage(messageObj.from,messageObj.text))
     })
 
     socket.on('disconnect',() => {
